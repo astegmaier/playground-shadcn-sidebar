@@ -1,4 +1,5 @@
 import { Calendar, Home, Inbox, Search, Settings } from "lucide-react";
+import type { ComponentProps } from "react";
 
 import {
   Sidebar,
@@ -40,9 +41,9 @@ const items = [
   },
 ];
 
-export function AppSidebar() {
+export function AppSidebar(props: ComponentProps<typeof Sidebar>) {
   return (
-    <Sidebar>
+    <Sidebar {...props}>
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>Application</SidebarGroupLabel>
