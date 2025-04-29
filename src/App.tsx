@@ -2,16 +2,18 @@ import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "./AppSidebar";
 import { BigList } from "./BigList";
 
+// This lays out the sidebar to the left of the top bar and the main content.
 export const App = () => {
   return (
     <SidebarProvider>
       <AppSidebar />
-      <main>
-        <div className="p-3 bg-green-300 overflow-auto max-h-full">
+      <div className="flex flex-col flex-grow">
+        <div className="p-3 bg-blue-300">17Reviews</div>
+        <main className="p-3 bg-green-300 ">
           <SidebarTrigger />
           <BigList expanded />
-        </div>
-      </main>
+        </main>
+      </div>
     </SidebarProvider>
   );
 };
