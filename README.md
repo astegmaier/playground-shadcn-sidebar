@@ -16,7 +16,7 @@ It was necessary to do a slight refactoring of the generated `components/ui/side
 
 2. Tweak the generated `components/ui/sidebar.tsx` file to split out the `<SidebarWrapper>` component from `<SideBarContext>`. (see [src/components/ui/sidebar.tsx](./src/components/ui/sidebar.tsx) for the full code).
 3. Render the `<SidebarWrapper>` component in your app in the position you want the sidebar to be.
-4. Give the `<SidebarWrapper>` component a `className` of `relative h-full min-h-auto` and the `<Sidebar>` undernieth it a `className` of `absolute h-full` (see [src/App.tsx](./src/App.tsx))
+4. Give the `<SidebarWrapper>` component a `className` of `relative h-full min-h-auto` and the `<Sidebar>` underneath it a `className` of `absolute h-full` (see [src/App.tsx](./src/App.tsx))
 
 ## Results
 
