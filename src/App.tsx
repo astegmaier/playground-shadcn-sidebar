@@ -2,10 +2,10 @@ import { BigList } from "./BigList";
 
 export const App = () => {
   return (
-    <div className="flex-col">
-      <div className="p-3 bg-blue-300">17Reviews</div>
-      <div className="p-3 bg-red-300">Sidebar</div>
-      <div className="p-3 bg-green-300">
+    <div className="grid grid-cols-[300px_1fr] grid-rows-[auto_1fr] h-screen w-screen overflow-hidden">
+      <div className="p-3 bg-blue-300 col-span-2">17Reviews</div>
+      <div className="p-3 bg-red-300 overflow-auto max-h-full">Sidebar</div>
+      <div className="p-3 bg-green-300 overflow-auto max-h-full">
         <BigList />
       </div>
     </div>
